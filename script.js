@@ -19,4 +19,17 @@ const year = document.querySelector("#year");
 
 if (year) {
   year.textContent = new Date().getFullYear();
-}
+}document.querySelectorAll('a[href="#contact"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+});
