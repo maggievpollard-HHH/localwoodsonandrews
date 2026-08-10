@@ -809,7 +809,7 @@
 
   <!-- CONTACT -->
 
-  <section id="contact" class="section contact-section">
+  <section   class="section contact-section">
 
     <div class="container contact-grid">
 
@@ -855,74 +855,81 @@
 
 
       <form
-        class="contact-form"
-        action="https://formspree.io/f/xnpapjwp"
-        method="POST"
-      >
+  class="contact-form"
+  action="https://formspree.io/f/xnpapjwp"
+  method="POST"
+>
 
-        <div class="form-row">
+  <div class="form-row">
+    <label>
+      Name
+      <input type="text" name="name" required />
+    </label>
 
-          <label>
-            Name
-            <input type="text" name="name" required />
-          </label>
+    <label>
+      Business
+      <input type="text" name="business" />
+    </label>
+  </div>
 
-          <label>
-            Business
-            <input type="text" name="business" />
-          </label>
+  <div class="form-row">
+    <label>
+      Email
+      <input type="email" name="email" required />
+    </label>
 
-        </div>
+    <label>
+      Phone
+      <input type="tel" name="phone" />
+    </label>
+  </div>
 
+  <label>
+    What kind of help are you looking for?
+    <select name="service_needed">
+      <option value="">Select one</option>
+      <option value="Bookkeeping & Accounting">Bookkeeping & Accounting</option>
+      <option value="Fractional Controller">Fractional Controller</option>
+      <option value="Fractional CFO">Fractional CFO</option>
+      <option value="Real Estate Accounting">Real Estate Accounting</option>
+      <option value="Construction Accounting">Construction Accounting</option>
+      <option value="Business Operations">Business Operations</option>
+      <option value="Not Sure">Not Sure Yet</option>
+    </select>
+  </label>
 
-        <div class="form-row">
+  <label>
+    Approximate annual revenue
+    <select name="annual_revenue">
+      <option value="">Select a range</option>
+      <option value="Under $500K">Under $500K</option>
+      <option value="$500K-$1M">$500K-$1M</option>
+      <option value="$1M-$3M">$1M-$3M</option>
+      <option value="$3M-$10M">$3M-$10M</option>
+      <option value="$10M+">$10M+</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+  </label>
 
-          <label>
-            Email
-            <input type="email" name="email" required />
-          </label>
+  <label>
+    What are you trying to solve?
+    <textarea
+      name="message"
+      rows="6"
+      required
+      placeholder="Tell Joe what is going on with the business, the numbers, or the finance function."
+    ></textarea>
+  </label>
 
-          <label>
-            Phone
-            <input type="tel" name="phone" />
-          </label>
+  <button class="button button-primary" type="submit">
+    Send My Question to Joe
+  </button>
 
-        </div>
+  <p style="margin-top:14px;font-size:14px;">
+    Your message goes directly to Joe.
+  </p>
 
-
-        <label>
-          What can Joe help with?
-
-          <select name="service">
-            <option value="">Select a service</option>
-            <option>Controller & Accounting</option>
-            <option>Fractional CFO & Financial Management</option>
-            <option>Business Operations</option>
-            <option>HR & People Operations</option>
-            <option>Real Estate Investment Financial Management</option>
-            <option>Construction Financial & Project Management</option>
-            <option>Notary Services</option>
-            <option>Not Sure Yet</option>
-          </select>
-        </label>
-
-
-        <label>
-          Tell Joe what's going on
-
-          <textarea
-            name="message"
-            rows="6"
-            required
-          ></textarea>
-        </label>
-
-
-        <button class="button button-primary form-button" type="submit">
-          Send to Joe
-        </button>
-
-      </form>
+</form>
 
     </div>
 
