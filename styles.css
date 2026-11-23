@@ -288,7 +288,7 @@ p {
   width: min(100%, 285px);
   color: var(--navy);
   background: var(--white);
-  box-shadow: 0 18px 40px rgba(5, 42, 79, 0.18);
+  box-shadow: 0 6px 16px rgba(5, 42, 79, 0.12);
 }
 
 .hero-photo {
@@ -298,11 +298,19 @@ p {
 }
 
 .hero-profile div {
-  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  padding: 8px 12px;
 }
 
 .hero-profile p {
-  margin-bottom: 2px;
+  margin: 0;
+}
+
+.hero-profile a {
+  font-size: 0.875rem;
 }
 
 .capabilities {
@@ -1015,6 +1023,7 @@ p {
   }
 
   .hero-photo {
+    flex: 0 0 92px;
     width: 92px;
   }
 
